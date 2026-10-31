@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNZIT | Acne care from a real dermatologist</title>
+<meta name="description" content="A board-certified dermatologist builds your acne plan from three photos. Prescriptions ship to your door. Coming soon.">
+<meta property="og:title" content="UNZIT | Acne care from a real dermatologist">
+<meta property="og:description" content="Real derm. Real plan. Zero BS. Coming soon.">
+<meta property="og:url" content="https://tryunzit.com">
+<meta name="theme-color" content="#0E0F11">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E0F11'/%3E%3Cpolygon points='14,4 24,4 18,28 8,28' fill='%23C8FF2E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #0E0F11;
+    --panel: #17181B;
+    --line: #2E3036;
+    --text: #F2F2EE;
+    --muted: #A3A39D;
+    --soft: #C9C9C3;
+    --accent: #C8FF2E;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); }
+  body { font-family: Archivo, system-ui, sans-serif; font-size: 18px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  a { color: var(--text); }
+  a:hover { color: #fff; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .mark { display: block; line-height: 0; }
+  .mark svg { height: 30px; width: auto; }
+  .ig { font-size: 15px; font-weight: 500; text-decoration: none; color: var(--soft); }
+  .eyebrow { margin: 0 0 20px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
+  .hero { padding: 72px 0 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px; }
+  .hero-copy { flex: 1 1 520px; min-width: 0; }
+  h1 { margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(60px, 10vw, 128px); line-height: 0.9; text-transform: uppercase; letter-spacing: 0.01em; }
+  .lede { margin: 28px 0 0; max-width: 540px; font-size: 20px; color: var(--soft); }
+  form { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; max-width: 540px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  input[type=email] { flex: 1 1 250px; min-height: 56px; padding: 0 18px; background: var(--panel); border: 1px solid #3A3C42; border-radius: 0; color: var(--text); font: 16px Archivo, system-ui, sans-serif; }
+  input[type=email]:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .btn { min-height: 56px; padding: 0 30px; background: var(--accent); color: var(--bg); border: 0; font-family: Anton, Impact, sans-serif; font-size: 18px; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%); }
+  .btn:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+  .btn-ghost { min-height: 48px; padding: 0 22px; background: transparent; color: var(--text); border: 1px solid #4A4C52; font-family: Anton, Impact, sans-serif; font-size: 16px; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; }
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-ghost:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .hp { display: none; }
+  .extras { flex: 1 1 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; font-size: 14px; color: var(--muted); }
+  .extras div { display: flex; flex-direction: column; gap: 6px; }
+  .extras select { min-height: 48px; padding: 0 12px; background: var(--panel); border: 1px solid #3A3C42; border-radius: 0; color: var(--text); font: 15px Archivo, system-ui, sans-serif; }
+  .extras select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .fine { margin: 16px 0 0; max-width: 540px; font-size: 14px; color: var(--muted); }
+  .status { margin: 16px 0 0; font-weight: 700; color: var(--accent); min-height: 1.5em; }
+  .share-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 8px; font-size: 14px; color: var(--muted); }
+
+  .card { flex: 1 1 340px; max-width: 420px; min-width: 0; background: var(--panel); border: 1px solid var(--line); padding: 28px; clip-path: polygon(0 0, 88% 0, 100% 8%, 100% 100%, 0 100%); }
+  .card-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 24px; }
+  .card-top p { margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+  .chip { padding: 4px 10px; border: 1px solid var(--accent); color: var(--accent) !important; font-family: Archivo, sans-serif !important; font-weight: 700; letter-spacing: 0.06em !important; }
+  .slot { margin: 0 0 12px; font-family: Anton, Impact, sans-serif; font-size: 28px; letter-spacing: 0.04em; color: var(--accent); }
+  .bars { display: flex; flex-direction: column; gap: 10px; margin-bottom: 26px; }
+  .bars span { display: block; height: 14px; background: #2A2C31; }
+  .bars span:nth-child(1) { width: 82%; }
+  .bars span:nth-child(2) { width: 64%; }
+  .bars span:nth-child(3) { width: 74%; }
+  .score { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; border-top: 1px solid var(--line); }
+  .score p { margin: 0; font-size: 14px; color: var(--muted); }
+  .score strong { display: block; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: 20px; letter-spacing: 0.04em; color: var(--text); }
+  .score b { font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: 44px; line-height: 1; color: var(--accent); }
+  .card-foot { display: flex; align-items: center; gap: 10px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+  .card-foot svg { flex: none; }
+
+  .band { background: var(--accent); color: var(--bg); padding: 18px 0; }
+  .band .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 32px; font-family: Anton, Impact, sans-serif; font-size: 20px; letter-spacing: 0.06em; text-transform: uppercase; }
+  section.how { padding: 104px 0; }
+  h2 { margin: 0 0 48px; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(42px, 6vw, 72px); line-height: 0.95; text-transform: uppercase; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 2px; background: var(--line); border: 2px solid var(--line); }
+  .step { background: var(--bg); padding: 32px 26px 38px; }
+  .step b { display: block; margin-bottom: 26px; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: 52px; line-height: 1; color: var(--accent); }
+  .step h3 { margin: 0 0 10px; font-size: 21px; }
+  .step p { margin: 0; font-size: 16px; color: var(--soft); }
+
+  .pricing .wrap { padding-top: 0; padding-bottom: 88px; }
+  .price-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 24px 28px; border: 1px solid var(--accent); }
+  .price { margin: 0; display: flex; align-items: baseline; gap: 8px; }
+  .price span { font-family: Anton, Impact, sans-serif; font-size: 48px; line-height: 1; color: var(--accent); }
+  .price em { font-style: normal; font-size: 15px; color: var(--muted); }
+  .price-note { margin: 0; flex: 1 1 320px; font-size: 16px; color: var(--soft); }
+  .price-cta { display: inline-flex; align-items: center; text-decoration: none; }
+  .friends { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .friends .wrap { padding-top: 88px; padding-bottom: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px; }
+  .friends h2 { margin: 0; flex: 1 1 440px; }
+  .friends-side { flex: 1 1 320px; max-width: 440px; }
+  .friends-side p { margin: 0 0 20px; color: var(--soft); }
+
+  footer { border-top: 1px solid var(--line); padding: 44px 0 56px; font-size: 14px; color: var(--muted); }
+  footer .mark svg { height: 22px; margin-bottom: 24px; }
+  footer p { margin: 0 0 14px; max-width: 760px; }
+  details { margin-top: 18px; max-width: 760px; }
+  summary { cursor: pointer; color: var(--text); font-weight: 700; }
+  details p { margin-top: 12px; }
+  @media (max-width: 560px) { .btn { width: 100%; clip-path: none; } .hero { padding: 40px 0 72px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="mark" href="/" aria-label="UNZIT home">
+      <svg viewBox="0 0 316 100" role="img" aria-label="UNZIT"><path fill="#F2F2EE" d="M0 0H18V82H42V0H60V100H0Z M72 100V0H90L114 58V0H132V100H114L90 42V100Z M144 0H204V18L166 82H204V100H144V82L182 18H144Z M256 0H316V18H295V100H277V18H256Z"/><path fill="#C8FF2E" d="M226 0H244L234 100H216Z"/></svg>
+    </a>
+    <a class="ig" href="https://instagram.com/tryunzit" rel="noopener">Follow us on Instagram</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Coming soon</p>
+        <h1>Clear skin.<br>Zero BS.</h1>
+        <p class="lede">A board-certified dermatologist builds your acne plan from three photos. Prescriptions ship to your door. No waiting room.</p>
+
+        <form id="waitlist" action="https://formsubmit.co/hello@tryunzit.com" method="POST">
+          <input type="hidden" name="_subject" value="New UNZIT early access signup">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://tryunzit.com/#waitlist">
+          <label class="sr" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn" type="submit">Get early access</button>
+          <div class="extras">
+            <div>
+              <label for="who">I'm signing up as</label>
+              <select id="who" name="signing_up_as">
+                <option value="">Choose one (optional)</option>
+                <option>An adult with acne</option>
+                <option>Just curious</option>
+              </select>
+            </div>
+            <div>
+              <label for="state">My state</label>
+              <select id="state" name="state">
+                <option value="">Choose one (optional)</option>
+                <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option>CA</option><option>CO</option><option>CT</option><option>DE</option><option>DC</option><option>FL</option><option>GA</option><option>HI</option><option>ID</option><option>IL</option><option>IN</option><option>IA</option><option>KS</option><option>KY</option><option>LA</option><option>ME</option><option>MD</option><option>MA</option><option>MI</option><option>MN</option><option>MS</option><option>MO</option><option>MT</option><option>NE</option><option>NV</option><option>NH</option><option>NJ</option><option>NM</option><option>NY</option><option>NC</option><option>ND</option><option>OH</option><option>OK</option><option>OR</option><option>PA</option><option>RI</option><option>SC</option><option>SD</option><option>TN</option><option>TX</option><option>UT</option><option>VT</option><option>VA</option><option>WA</option><option>WV</option><option>WI</option><option>WY</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <div class="share-row" id="share-after" hidden>
+          <button class="btn-ghost share-btn" type="button">Share with friends</button>
+          <span>Breakouts are better with backup.</span>
+        </div>
+        <p class="fine">We'll only email you about launch. Must be 18 or older to join. <a href="#privacy">Privacy</a></p>
+      </div>
+
+      <div class="card" aria-label="Preview of an UNZIT plan, details hidden">
+        <div class="card-top"><p>Your plan</p><p class="chip">Derm reviewed</p></div>
+        <p class="slot">AM routine</p>
+        <div class="bars" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="slot">PM routine</p>
+        <div class="bars" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="score">
+          <p><strong>UNZIT Score</strong>Tracked at every check-in</p>
+          <b aria-label="Score hidden">??</b>
+        </div>
+        <div class="card-foot">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="11" width="16" height="10"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          Unlocks after your dermatologist reviews your skin.
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="band"><div class="wrap"><span>Board-certified dermatologist</span><span>Rx shipped to you</span><span>Weekly check-ins</span><span>From $55/mo</span></div></div>
+
+<section class="how">
+  <div class="wrap">
+    <p class="eyebrow">How it will work</p>
+    <h2>Four steps. All from your phone.</h2>
+    <div class="steps">
+      <div class="step"><b>01</b><h3>Snap and spill</h3><p>Three photos and a short questionnaire about your skin.</p></div>
+      <div class="step"><b>02</b><h3>A real derm reviews</h3><p>A board-certified dermatologist looks at your case. A person, not a bot.</p></div>
+      <div class="step"><b>03</b><h3>Get your routine</h3><p>An AM and PM routine built for your skin, with prescriptions shipped to you.</p></div>
+      <div class="step"><b>04</b><h3>Check in weekly</h3><p>Weekly check-ins available as an upgrade, with an UNZIT Score so you can watch your skin improve.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="wrap">
+    <div class="price-strip">
+      <p class="price"><em>Starting at</em><span>$55</span><em>/ month</em></p>
+      <p class="price-note">Dermatologist consult and prescriptions included. No insurance needed. Weekly check-ins available as an upgrade.</p>
+      <a class="btn-ghost price-cta" href="#waitlist">Get early access</a>
+    </div>
+  </div>
+</section>
+
+<section class="friends">
+  <div class="wrap">
+    <h2>Bring your friends.</h2>
+    <div class="friends-side">
+      <p>Know someone who's over their breakouts? Send them the link and get on the list together.</p>
+      <button class="btn-ghost share-btn" type="button">Share UNZIT</button>
+      <p class="status" id="share-status" role="status" aria-live="polite" style="margin-top:12px"></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="/" aria-label="UNZIT home">
+      <svg viewBox="0 0 316 100" role="img" aria-label="UNZIT"><path fill="#F2F2EE" d="M0 0H18V82H42V0H60V100H0Z M72 100V0H90L114 58V0H132V100H114L90 42V100Z M144 0H204V18L166 82H204V100H144V82L182 18H144Z M256 0H316V18H295V100H277V18H256Z"/><path fill="#C8FF2E" d="M226 0H244L234 100H216Z"/></svg>
+    </a>
+    <p>UNZIT is launching soon. This page is not medical advice and is not for emergencies. If you have a medical emergency, call 911.</p>
+    <details id="privacy">
+      <summary>Waitlist privacy</summary>
+      <p>We collect your email address, plus your state and who you are if you choose to share them, to tell you when UNZIT launches near you. We don't sell it or share it for advertising. You can unsubscribe from any email, or ask us to delete your address at <a href="mailto:hello@tryunzit.com">hello@tryunzit.com</a>. Please don't send health information through this form.</p>
+    </details>
+    <p style="margin-top:24px">© 2026 UNZIT</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var shareData = {
+      title: 'UNZIT',
+      text: 'Real dermatologist, real acne plan, from your phone. Get on the early access list:',
+      url: 'https://tryunzit.com'
+    };
+    var shareStatus = document.getElementById('share-status');
+    function share(statusEl) {
+      if (navigator.share) {
+        navigator.share(shareData).catch(function () {});
+        return;
+      }
+      var full = shareData.text + ' ' + shareData.url;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(full).then(function () {
+          if (statusEl) statusEl.textContent = 'Link copied. Send it to a friend.';
+        }, function () {
+          if (statusEl) statusEl.textContent = 'Share this link: ' + shareData.url;
+        });
+      } else if (statusEl) {
+        statusEl.textContent = 'Share this link: ' + shareData.url;
+      }
+    }
+    var buttons = document.querySelectorAll('.share-btn');
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function (e) {
+        var inHero = e.currentTarget.closest('.share-row');
+        share(inHero ? document.getElementById('status') : shareStatus);
+      });
+    }
+
+    var form = document.getElementById('waitlist');
+    var status = document.getElementById('status');
+    var shareAfter = document.getElementById('share-after');
+    if (!form) return;
+    var ajaxUrl = form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      status.textContent = 'Sending...';
+      fetch(ajaxUrl, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+        .then(function (r) {
+          if (r.ok) {
+            form.reset();
+            status.textContent = "You're on the list. We'll email you at launch.";
+            shareAfter.hidden = false;
+          } else {
+            status.textContent = 'Something went wrong. Please try again.';
+          }
+        })
+        .catch(function () { status.textContent = 'Something went wrong. Please try again.'; });
+    });
+  })();
+</script>
+</body>
+</html>
