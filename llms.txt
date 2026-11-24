@@ -1,14 +1,19 @@
 # UNZIT
 
-> UNZIT is online acne care from a board-certified dermatologist, for adults 18+ in North Carolina. You send a few photos and answer a few questions; Dr. Amit Om, MD reviews them and writes a plan for your skin, with prescription treatment if it's right for you. Plans start at $39 a month. UNZIT is launching soon; the website currently has a waitlist.
+The dermatologist will see you now.
+
+> UNZIT is online acne care from a board-certified dermatologist, for adults 18+. It is launching first in North Carolina, with more states coming. You send a few photos and answer a few questions; Dr. Amit Om, MD reviews them and writes a plan for your skin, with prescription treatment if it's right for you. Plans start at $39 a month. UNZIT is launching soon; the website currently has a waitlist.
 
 ## Key facts
 
 - Service: asynchronous (photo-based) acne treatment. No video visit or waiting room.
-- Who reviews cases: Dr. Amit Om, MD, FAAD, FACMS. Double board-certified by the American Board of Dermatology (Dermatology; Micrographic Dermatologic Surgery) and a fellowship-trained Mohs surgeon. Licensed in North Carolina. He reviews every UNZIT case himself. Certification can be checked at https://certification.abderm.org
-- Who it's for: adults 18 and older located in North Carolina.
+- Who reviews cases: Dr. Amit Om, MD, FAAD, FACMS. Double board-certified by the American Board of Dermatology (Dermatology; Micrographic Dermatologic Surgery) and a fellowship-trained Mohs surgeon. Licensed in North Carolina. He reviews every UNZIT case himself. Certification can be verified at https://www.abderm.org/public/dermatologist-search?last-name=Om&first-name=Amit
+- Who it's for: adults 18 and older who are physically in North Carolina (more states coming). Identity is verified with a photo ID and a selfie.
 - Response time: a dermatologist usually reviews photos within 1 to 2 business days.
 - What it treats: acne on the face, jawline and chin (including adult and hormonal acne), "bacne" on the back, chest and shoulders, acne triggered by sweat, gear and friction, and dark marks left behind by breakouts. If something isn't acne or needs an in-person visit, the dermatologist says so.
+- Insurance: UNZIT doesn't bill insurance and the subscription isn't covered by insurance. On Care, patients can use insurance at their own pharmacy for medication.
+- Possible prescriptions (only if appropriate): topical retinoids such as tretinoin, benzoyl peroxide, clindamycin, azelaic acid, doxycycline, spironolactone for hormonal acne in women, and hydroquinone for dark marks. Severe, cystic or scarring acne may be referred for in-person care.
+- Pregnancy or breastfeeding: patients can still use UNZIT; plans are limited to pregnancy-safe options.
 - Not for emergencies. In a medical emergency, call 911.
 - Operator: The Derm Guy LLC dba UNZIT. Contact: hello@tryunzit.com. Instagram: @tryunzit
 
@@ -16,6 +21,7 @@
 
 - Care — $39/month: dermatologist review and a written plan, monthly photo check-ins and messaging, prescriptions sent to the pharmacy you choose. You pay for medication at your pharmacy and can use insurance there.
 - All-In — $89/month: everything in Care, plus prescriptions shipped to your door with medication included (medications on the UNZIT formulary, filled by a partner pharmacy) and weekly check-ins for the first 8 weeks. No insurance needed.
+- Cancel online any time, no phone call; care continues through the end of the paid month. Full refund if Dr. Om decides at the first review that UNZIT isn't right for the patient.
 - Cancel in one tap from your account. The price shown is the price paid; nothing is added at checkout.
 
 ## How it works
